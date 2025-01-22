@@ -148,3 +148,19 @@ h1,h2,h3{
 }
 
 
+/* Servicios */
+
+@media (min-width: 768px) {
+    .servicios{
+        display:grid;
+        /* dos formas de hacer lo mismo */
+        /*
+        grid-template-columns: 300px  300px ;
+        grid-template-rows: 200px 800px;
+        o
+        grid: 200px 800px / 300px 300px
+        */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
