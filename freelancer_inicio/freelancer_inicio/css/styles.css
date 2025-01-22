@@ -18,9 +18,17 @@ html{
   }
   
 
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.55);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 body{
     font-size: 16px; /** 1 rem = 10 px */
     font-family: "Krub", serif;
+    background-image: linear-gradient(to top, #DFE9F3, var(--blanco) 100%);
 }
 
 
@@ -53,6 +61,7 @@ h1,h2,h3{
     background-size: cover;
     height: 45rem;
     position: relative;
+    margin-bottom: 2rem;
     /**padding: 20px;*/
 }
 
