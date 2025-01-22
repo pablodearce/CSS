@@ -84,12 +84,18 @@ h1,h2,h3{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border:none;
 }
+
 
 @media (min-width: 480px) {
     .boton{width: auto;
     }
     
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .contenido-hero{
@@ -108,6 +114,25 @@ h1,h2,h3{
 .contenido-hero h2,
 .contenido-hero p{ 
     color: var(--blanco);
+}
+
+.w-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-100{
+        width: auto;
+    }
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
 }
 
 .nav-bg{
@@ -161,6 +186,85 @@ h1,h2,h3{
         grid: 200px 800px / 300px 300px
         */
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
     }
     
+}
+
+/*Servicios*/
+
+.servicio {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.servicios .icono{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/*Formulario Contacto*/
+.formulario{
+ background-color: var(--gris);
+ width: min(60rem , 100%); /*Utilizar el vlaoir mas pequeño */
+ margin: 0 auto;
+ padding: 2rem;
+ border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primario);
+   margin-bottom: 2rem;
+}
+
+.contenedor-campos{
+
+}
+
+.campo{
+  margin-bottom: 1rem;
+}
+.campo label{
+  color:var(--blanco);
+  font-weight: 700;
+  margin-bottom: .5rem ;
+  display:block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton{
+width: 100%;
 }
