@@ -8,15 +8,37 @@
     --fuente-principal: 3.8rem;
 }
 
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;  
-  }
 
+
+
+/* apply a natural box layout model to all elements, but allowing components to change 
+html {
+    box-sizing: border-box;
+  }
   *, *:before, *:after {
     box-sizing: inherit;
   }
+ */ 
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;   /*estas lineas se agregan para ayudar a a justar la pagina*/
+    scroll-snap-type: y mandatory;
+  }
+
+  *, *:before, *:after {     /*estas lineas se agregan para ayudar a a justar la pagina*/
+    box-sizing: inherit;    /*estas lineas se agregan para ayudar a a justar la pagina*/
+  }
   
+
+/* Scroll snap*/
+.servicio,
+.navegacion-principal,
+.formulario  {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 .sombra{
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.55);
@@ -174,6 +196,8 @@ h1,h2,h3{
 
 
 /* Servicios */
+
+
 
 @media (min-width: 768px) {
     .servicios{
